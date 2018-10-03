@@ -3,20 +3,22 @@
     <head>
         <title>ImageSwapping</title>
         <meta charset="UTF-8">
-       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        
+        <div class="container">
         <header>
             <h1>
-                <img src="Vader.jpg" alt="Vader" id="Image" width="1025" height="450">
+                <img src="Vader.jpg" alt="Vader" id="Image" height="375" width="775">
             </h1>
         </header>
     <section>
-       <img  src="yoda.jpeg" alt="Yoda" id="Yoda" onclick="addOnClick('yoda.jpeg')" />
-       <img src="Vader.jpg" alt="Vader" id="Vader" onclick="addOnClick('Vader.jpg')" />
-       <img src="HanSolo.jpg" alt="HanSolo" id="HanSolo" onclick="addOnClick('HanSolo.jpg')"/>
+       <img class ="img-circle" src="yoda.jpeg" alt="Yoda" id="Yoda" height="200" width="250" onclick="addOnClick('yoda.jpeg')" />
+       <img class ="img-circle"src="Vader.jpg" alt="Vader" id="Vader"  height="200" width="250" onclick="addOnClick('Vader.jpg')" />
+       <img class ="img-circle"src="HanSolo.jpg" alt="HanSolo" id="HanSolo" height="200" width="250"  onclick="addOnClick('HanSolo.jpg')"/>
     </section>
+    </div>
     </body>
     <script src="imageSwapTimed.js"></script>
 </html>
